@@ -1,0 +1,52 @@
+form{
+    width: 100%;
+}
+mat-card{
+    
+   width: 30%;
+   height: 80%;
+   align-items:flex-start;
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-start;
+   
+}
+.container{
+    display: flex;
+    height: 80vh;
+    align-items:center;
+    justify-content: center;
+}
+h1{
+  
+    font-weight: 400;
+  
+    text-align: center;
+  
+    
+    
+}
+mat-form-field{
+    width: 100%;
+}
+label{
+    left: 0;
+   
+    font-weight: 500;
+
+}
+.button-group{
+    display: inline;
+  
+   
+   
+}
+button:last-child{
+    margin-left: 25px;
+}
+button{
+    margin-top: 25px;
+}
+.warn{
+    color: red;
+}

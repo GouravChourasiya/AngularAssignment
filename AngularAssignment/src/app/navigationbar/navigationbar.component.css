@@ -1,0 +1,53 @@
+.example-container {
+    width: 100vw;
+    height: 100vh;
+   
+    /* border: 10px solid #555; */
+  }
+  
+  mat-drawer-content {
+    padding: 12px;
+    /* display: flex; */
+    /* height: 100vh;
+    width: 100vw; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+  button{
+    margin-left: 25px;
+  }
+  /* mat-drawer-content ul{
+    list-style-type: none;
+    
+  }
+  mat-drawer-content ul li{
+    margin-left: 15px;
+    display: inline;
+  } */
+  mat-drawer{
+   height: 100vh;
+    width: 100px;
+    overflow: hidden;
+
+
+  }
+  mat-drawer ul{
+    list-style-type: none;
+    vertical-align: middle;
+   
+   position: absolute;
+    top: 35%;
+    left: 35%;
+   
+  }
+  mat-drawer ul  li{
+    
+   
+    margin: 25px;
+   
+  }
+  mat-toolbar {
+    
+    justify-content: center;
+  }
+  

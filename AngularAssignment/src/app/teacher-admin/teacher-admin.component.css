@@ -1,0 +1,23 @@
+.addbutton{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+   
+}
+button:last-child{
+    margin-left: 20px;
+}
+.container-admin{
+    max-width: 1200px;
+ margin: 0 auto;
+}
+table{
+    width: 100%;
+}
+.inner-container{
+    top: 0;
+}
+mat-form-field{
+    margin-top: 20px;
+    font-size: 14px;
+}

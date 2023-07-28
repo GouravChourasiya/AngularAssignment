@@ -1,0 +1,45 @@
+
+h1{
+   
+    text-align: center;
+    font-weight: 400;
+    font-size: xx-large;
+    margin-top: 10px;
+
+    
+}
+button{
+   
+    /* margin-left:50px; */
+    /* justify-content:flex-end; */
+    margin: 25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    
+    
+   
+}
+
+.loginbuttonsgroup{
+    
+    display: flex;
+    justify-content: center;
+    
+    /* align-items: flex-end; */
+   
+}
+#Welcome{
+    color: coral;
+    
+}
+#result{
+    margin-top: 50px;
+}
+.heading{
+    margin-top: 20vh;
+    /* vertical-align: middle; */
+   
+}

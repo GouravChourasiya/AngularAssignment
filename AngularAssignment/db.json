@@ -1,0 +1,49 @@
+{
+  "RecordList": [
+    {
+      "Name": "ff",
+      "DOB": "2022-09-07",
+      "RollNo": 63,
+      "Scores": 22,
+      "id": 7
+    },
+    {
+      "Name": "NewUser",
+      "DOB": "2022-09-08",
+      "RollNo": 9,
+      "Scores": 444,
+      "id": 8
+    },
+    {
+      "Name": "usernew",
+      "DOB": "2022-09-08",
+      "RollNo": 10,
+      "Scores": 4555,
+      "id": 9
+    },
+    {
+      "Name": "Gourav Chourasiy",
+      "DOB": "2022-09-07",
+      "RollNo": 13,
+      "Scores": 4444,
+      "id": 10
+    },
+    {
+      "Name": "Surbhit",
+      "DOB": "2023-07-27",
+      "RollNo": 21,
+      "Scores": 78787,
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

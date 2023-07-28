@@ -1,0 +1,36 @@
+
+<mat-drawer-container class="example-container" >
+  <!-- Drawer Start here -->
+    <mat-drawer #drawer>
+        <ul>
+          <li><button mat-fab matTooltip="Home"
+            [matTooltipPosition]="'right'"  color="warn" routerLink=""><mat-icon >home</mat-icon></button></li>
+        <li><button mat-fab matTooltip="Login As Teacher"
+          [matTooltipPosition]="'right'"  color="primary" (click)=" directToAdmin()"><mat-icon >person</mat-icon></button></li>
+      <li><button mat-fab  matTooltip="Login As Student" routerLink="/student" [matTooltipPosition]="'right'"  color="accent"><mat-icon >group</mat-icon></button></li>
+    </ul>
+    </mat-drawer>
+    <!-- Drawer Ends here -->
+    <!-- Drawer Contents Here -->
+    <mat-drawer-content>
+      <!-- Navigation bar -->
+    <mat-toolbar >
+    <button mat-mini-fab  matTooltip="Home"  [matTooltipPosition]="'below'" color="warn" routerLink=""><mat-icon >home</mat-icon></button>
+    <button mat-mini-fab  matTooltip="Menu"  [matTooltipPosition]="'below'"(click)="drawer.toggle()" color="primary"><mat-icon >menu</mat-icon></button>
+    <!-- if user is alredy logged in then showing admin page -->
+     <button mat-mini-fab color="primary" matTooltip="Login As Teacher"  [matTooltipPosition]="'below'" (click)=" directToAdmin()" >
+      <mat-icon >person</mat-icon>
+    
+     </button>
+    
+     
+      <button mat-mini-fab  color="primary" matTooltip="Login As Student"  [matTooltipPosition]="'below'" routerLink="/student"><mat-icon >group</mat-icon></button>
+    </mat-toolbar>
+    <!-- Navigation Bar End here -->
+    <!-- Router Outlet to show Various Pages -->
+   <router-outlet></router-outlet>
+   <!-- Router Outlet End Here -->
+
+    </mat-drawer-content>
+    <!-- Drawer Content End here -->
+  </mat-drawer-container>

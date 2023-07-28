@@ -1,0 +1,59 @@
+<div class="container">
+<!-- Card For Student Login -->
+  <mat-card >
+<!-- Form For Student Login -->
+
+    <form [formGroup]="studentForm" (ngSubmit)="studentForm.value">
+    <h1 mat-card-title >Student Login</h1>
+
+<!-- Roll no Input  -->
+
+  <label>Enter Roll No</label>
+    <mat-form-field  appearance="outline">
+        <mat-label>Roll No</mat-label>
+        <input matInput formControlName="RollNo" placeholder="Enter Roll no" color="accent" type="number" min="1">
+
+        <!-- Mat Hint Showing Error Messages -->
+
+        <mat-hint *ngIf="RollNo?.invalid && ( RollNo?.dirty || RollNo?.touched )" > 
+          <p *ngIf = "RollNo?.errors?.['required']" class="warn">Roll No is Required</p>
+        </mat-hint>
+
+        <!-- MAt hints End Here -->
+       
+      </mat-form-field>
+<!-- Roll No Input Ends here -->
+     
+      <br>
+
+<!-- DOB Input -->
+
+      <label>Enter DOB</label>
+      <mat-form-field appearance="outline">
+      <mat-label>Date of Birth</mat-label>
+       
+      <input matInput formControlName="DOB" type="date">
+
+     <!-- Mat Hint For Showing Error Messages -->
+
+     <mat-hint *ngIf = "DOB?.invalid && ( DOB?.dirty || DOB?.touched )" > 
+      <p *ngIf = "DOB?.errors?.['required']" class="warn">DOB  is Required</p>
+    </mat-hint>
+
+    <!-- MAt hint Ends here -->
+
+    </mat-form-field>
+<!-- DOB Input Ends Here -->
+    
+   
+  
+ 
+  <div  class="buttton-group">
+      <button mat-raised-button color="warn" type="reset">Clear</button>
+      <button mat-raised-button color="primary" type="submit" (click)="OnSubmit()">Submit</button>
+  </div>
+</form>
+</mat-card>
+<!-- Mat Card Ends here -->
+
+</div>

@@ -1,0 +1,21 @@
+{
+  "RecordList": [
+    {
+      "Name": "Gourav",
+      "DOB": "2022-09-13T18:30:00.000Z",
+      "RollNo": 1,
+      "Scores": 23,
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,49 @@
+
+<div class="container">
+  
+    <mat-card >
+      <form [formGroup]="TeacherLoginForm" (ngSubmit)="OnLogin(TeacherLoginForm.value)">
+    <h1 mat-card-title >Teacher Login</h1>
+    
+   
+    <label>Enter Name</label>
+      <mat-form-field  appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="Name" id="Name" class="form-control" placeholder="Enter Name" color="accent">
+          <mat-icon matSuffix color="primary">perm_identity</mat-icon>
+         
+          <mat-hint *ngIf="Name?.invalid && ( Name?.dirty || Name?.touched )" > 
+            <p *ngIf = "Name?.errors?.['required']" class="warn">Name is Required</p>
+           
+    
+          </mat-hint>
+          
+          
+        </mat-form-field>
+      
+        <br>
+        <label>Enter Password</label>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+         
+      <input matInput formControlName="Password" type="password">
+      <mat-icon matSuffix color="primary">lock</mat-icon>
+          <!-- <mat-hint>Hint</mat-hint>
+        -->
+        <mat-hint *ngIf ="Password?.invalid && ( Password?.dirty || Password?.touched )" > 
+          <p *ngIf = "Password?.errors?.['required']" class="warn">Password is Required</p>
+         
+  
+        </mat-hint>
+      </mat-form-field>
+    
+   
+    <div  class="buttton-group">
+        <button mat-raised-button color="warn" type="reset">Clear</button>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+  </form>
+  </mat-card>
+  
+  
+  </div>
